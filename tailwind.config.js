@@ -1,0 +1,108 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        forest: {
+          50: '#f2f6f3',
+          100: '#e1ebe4',
+          200: '#c3d7ca',
+          300: '#93b5a0',
+          400: '#5f8f74',
+          500: '#3f7158',
+          600: '#2f5d47',
+          700: '#244a38',
+          800: '#1a3629',
+          900: '#11241a',
+        },
+        sage: {
+          50: '#f5f8f2',
+          100: '#e9efe3',
+          200: '#d4e0c9',
+          300: '#b5c9a6',
+          400: '#97b084',
+          500: '#7b9869',
+          600: '#5f7a4f',
+          700: '#4a5e3d',
+          800: '#38472f',
+          900: '#263020',
+        },
+        orange: {
+          50: '#fff6ef',
+          100: '#ffe9d9',
+          200: '#ffd0ad',
+          300: '#ffae78',
+          400: '#f7894a',
+          500: '#e4692c',
+          600: '#c4521a',
+          700: '#a24116',
+          800: '#7f3414',
+          900: '#5c250e',
+        },
+        ivory: {
+          50: '#fffdf8',
+          100: '#fbf7ec',
+          200: '#f4edda',
+          300: '#e9dfc6',
+          400: '#d6c9ab',
+          500: '#b3a686',
+          600: '#8c8165',
+          700: '#5f5846',
+          800: '#3a3629',
+          900: '#211e15',
+        },
+        success: {
+          50: '#eefaf2',
+          100: '#d5f2de',
+          500: '#2e8b57',
+          600: '#217246',
+          700: '#185a36',
+        },
+        warning: {
+          50: '#fff9e8',
+          100: '#ffefc2',
+          500: '#d4900f',
+          600: '#a86f08',
+          700: '#865606',
+        },
+        error: {
+          50: '#fef3f2',
+          100: '#fee4e2',
+          500: '#d92d20',
+          600: '#b42318',
+          700: '#912018',
+        },
+      },
+      fontFamily: {
+        display: ['Fraunces', 'Georgia', 'serif'],
+        sans: ['Manrope', 'system-ui', 'sans-serif'],
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-12px)' },
+        },
+        flow: {
+          to: { strokeDashoffset: '-40' },
+        },
+        modalIn: {
+          from: { opacity: '0', transform: 'translateY(16px) scale(0.98)' },
+          to: { opacity: '1', transform: 'translateY(0) scale(1)' },
+        },
+        fadeIn: {
+          from: { opacity: '0' },
+          to: { opacity: '1' },
+        },
+      },
+      animation: {
+        float: 'float 7s ease-in-out infinite',
+        'float-slow': 'float 9s ease-in-out infinite reverse',
+        flow: 'flow 1.6s linear infinite',
+        'modal-in': 'modalIn 0.35s cubic-bezier(0.2, 0.7, 0.2, 1) both',
+        'fade-in': 'fadeIn 0.3s ease-out both',
+      },
+    },
+  },
+  plugins: [],
+};
